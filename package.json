@@ -1,6 +1,6 @@
 {
 	"name": "lava-sdk",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Unofficial Lava.ru SDK for Node.js and TypeScript",
 	"author": {
 		"name": "creat1vv",
