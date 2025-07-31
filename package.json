@@ -1,0 +1,71 @@
+{
+	"name": "lava-sdk",
+	"version": "1.0.0",
+	"description": "Unofficial Lava.ru SDK for Node.js and TypeScript",
+	"author": {
+		"name": "creat1vv",
+		"url": "https://github.com/creat1vv"
+	},
+	"license": "MIT",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.esm.js",
+			"require": "./dist/index.cjs.js",
+			"types": "./dist/types/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"scripts": {
+		"build": "rollup -c",
+		"prepare": "npm run build",
+		"lint": "eslint . --ext .ts",
+		"format": "prettier --write .",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/creat1vv/lava-sdk.git"
+	},
+	"bugs": {
+		"url": "https://github.com/creat1vv/lava-sdk/issues"
+	},
+	"homepage": "https://github.com/creat1vv/lava-sdk#readme",
+	"keywords": [
+		"lava",
+		"lava.ru",
+		"sdk",
+		"payments",
+		"typescript",
+		"nodejs",
+		"lava-sdk"
+	],
+	"dependencies": {
+		"axios": "^1.11.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^28.0.6",
+		"@rollup/plugin-json": "^6.1.0",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@rollup/plugin-terser": "^0.4.4",
+		"@rollup/plugin-typescript": "^12.1.4",
+		"@types/jest": "^30.0.0",
+		"@types/node": "^20.6.0",
+		"eslint": "^9.32.0",
+		"jest": "^30.0.0",
+		"prettier": "^3.6.2",
+		"rollup": "^4.46.2",
+		"ts-jest": "^29.4.0",
+		"tslib": "^2.8.1",
+		"tsup": "^8.5.0",
+		"typescript": "^5.3.3"
+	}
+}
